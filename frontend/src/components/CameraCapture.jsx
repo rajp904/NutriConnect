@@ -76,7 +76,7 @@ const CameraCapture = ({ userId }) => {
 
     try {
       const res = await axios.post(
-        `https://nutriconnect-production.up.railway.app/api/ocr/${userId}`,
+        `https://nutriconnect-av0l.onrender.com/api/ocr/${userId}`,
         formData
       );
 

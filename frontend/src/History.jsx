@@ -11,7 +11,7 @@ function History({ userId }) {
   const fetchHistory = async () => {
     try {
       const res = await axios.get(
-      `https://nutriconnect-production.up.railway.app/api/ocr/history/${userId}`);
+      `https://nutriconnect-av0l.onrender.com/api/ocr/history/${userId}`);
       setData(res.data);
     } catch (err) {
       console.error(err);
