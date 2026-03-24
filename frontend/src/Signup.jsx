@@ -70,7 +70,7 @@ const Signup = ({ setShowLogin }) => {
             />
 
             <input
-              name="height"
+              name="height(cm)"
               placeholder="Height"
               onChange={handleChange}
               className="p-3 rounded-lg bg-zinc-800 text-white placeholder-gray-400 outline-none"
