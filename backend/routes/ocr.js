@@ -50,7 +50,6 @@ const extractNutritionData = (text) => {
     const match = text.match(/total\s*fat[^\d]*([0-9]+)\s*g/i);
     return match ? parseInt(match[1].replace(/^0+/, "") || "0") : 0;
     })(),
-    
     protein: /protein[^0-9]*([\d.]+)/i,
     carbs: /total\s*carb[^0-9]*([0-9]{1,3})(?=\s*g)/i,
     sugar: /sugars?[^0-9]*([\d.]+)/i,

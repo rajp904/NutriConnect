@@ -30,8 +30,8 @@ const userSchema = new mongoose.Schema(
     weight: {
       type: Number,
       required: true,
-      min: 20, // Minimum weight in kg
-      max: 300, // Maximum weight in kg
+      min: 20, 
+      max: 300, 
     },
     height: {
       type: Number,
@@ -45,7 +45,7 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
   },
-  { timestamps: true } // Adds `createdAt` and `updatedAt` fields automatically
+  { timestamps: true } 
 );
 
 

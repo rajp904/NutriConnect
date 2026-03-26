@@ -29,7 +29,6 @@ const storage = multer.memoryStorage(); // Store image in memory
 const upload = multer({ storage });
 
 // Routes
-// Note: If your ocrRoutes uses multer upload, make sure it's applied per-route, not globally
 app.use("/api/auth", authRoutes);
 app.use("/api/ocr", ocrRoutes); // OCR uses multer
 
