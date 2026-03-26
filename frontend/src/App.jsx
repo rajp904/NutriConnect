@@ -20,7 +20,7 @@ function App() {
     setNutrition(data);
   };
 
-  // 🔐 Auth
+  // 🔐 Authentication
   if (!userId) {
     return showLogin ? (
       <Login setUserId={setUserId} setShowLogin={setShowLogin} />
