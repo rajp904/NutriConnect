@@ -25,7 +25,7 @@ app.use(cors({
 app.options("*", cors());
 
 // File Upload Configuration
-const storage = multer.memoryStorage(); // Store image in memory
+const storage = multer.memoryStorage(); 
 const upload = multer({ storage });
 
 // Routes
