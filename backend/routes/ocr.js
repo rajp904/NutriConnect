@@ -20,13 +20,13 @@ const upload = multer({ storage });
 // Ensure 'uploads' directory exists
 fs.mkdir(uploadDir, { recursive: true }).catch(console.error);
 
-// 🔥 IMPROVED Preprocessing (better OCR accuracy)
+// 🔥 better OCR accuracy
 const preprocessImage = async (imagePath) => {
   try {
     let image = await Jimp.read(imagePath);
 
     await image
-      .resize(1000, Jimp.AUTO) // bigger image = better OCR
+      .resize(1000, Jimp.AUTO) // bigger image 
       .greyscale()
       .contrast(0.7)
       .normalize()
@@ -39,7 +39,7 @@ const preprocessImage = async (imagePath) => {
   }
 };
 
-// 🔥 IMPROVED extraction (more flexible)
+// extraction 
 const extractNutritionData = (text) => {
   const nutrition = {};
   const cleanText = text.toLowerCase();
