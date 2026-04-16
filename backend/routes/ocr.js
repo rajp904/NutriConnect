@@ -17,7 +17,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-// Ensure 'uploads' directory exists
+
 fs.mkdir(uploadDir, { recursive: true }).catch(console.error);
 
 // 🔥 better OCR accuracy

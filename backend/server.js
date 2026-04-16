@@ -6,13 +6,12 @@ import multer from "multer";
 import authRoutes from "./routes/auth.js";
 import ocrRoutes from "./routes/ocr.js"; 
 
-dotenv.config(); // Load .env variables
+dotenv.config(); 
 
 const app = express();
 
 //  Middleware
 app.use(express.json());
-
 
 app.use(cors({
   origin: process.env.FRONTEND_URL || "*",
@@ -30,7 +29,7 @@ const upload = multer({ storage });
 
 // Routes
 app.use("/api/auth", authRoutes);
-app.use("/api/ocr", ocrRoutes); // OCR uses multer
+app.use("/api/ocr", ocrRoutes); 
 
 // Root Route (For Testing)
 app.get("/", (req, res) => {
